@@ -3,11 +3,14 @@ package StepDefination;
 import org.testng.Assert;
 
 import com.Guru.BaseLayer.BaseClass;
+import com.Guru.PageLayer.RegistrationPage;
 
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.When;
 
 public class RegistrationStep extends BaseClass {
+	
+	static RegistrationPage reg;
 	
 	@Given("user open guruApplication in {string} browser")
 	public void user_open_guru_application_in_browser(String browserName) {
@@ -30,5 +33,21 @@ public class RegistrationStep extends BaseClass {
 		
 		Assert.assertEquals(title.contains("Tours"), true);
 	}
+	
+
+@When("user should enter valid firstname as {string}")
+public void user_should_enter_valid_firstname_as(String Fname) {
+	
+	 reg = new RegistrationPage();
+	 reg.validateFname(Fname);
+  
+}
+@When("user should enter valid LastName as {string}")
+public void user_should_enter_valid_last_name_as(String Lname) {
+	
+	reg = new RegistrationPage();
+	 reg.validatelname(Lname);
+   
+}
 
 }
