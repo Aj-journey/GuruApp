@@ -106,23 +106,26 @@ public void user_should_enter_valid_country_as(String country) {
 
 
 @When("user should enter valid userName as {string}")
-public void user_should_enter_valid_user_name_as(String string) {
+public void user_should_enter_valid_user_name_as(String UserName) {
 	
-	
+	reg.validateUserName(UserName);
 	
     
 }
 @When("user should enter valid password as {string}")
-public void user_should_enter_valid_password_as(String string) {
+public void user_should_enter_valid_password_as(String PassWord) {
    
+	reg.validatepassword(PassWord);
 }
 @When("user should enter valid confirmPassword as {string}")
-public void user_should_enter_valid_confirm_password_as(String string) {
-   
+public void user_should_enter_valid_confirm_password_as(String ConfirmPassword) {
+ 
+	reg.validateconfirmPassword(ConfirmPassword);
 }
 @Then("user should click on submit button")
 public void user_should_click_on_submit_button() {
    
+	reg.clickOnSubmitbtn();
 }
 
 }
