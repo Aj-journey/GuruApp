@@ -67,4 +67,26 @@ public void user_should_enter_valid_email_as(String Email) {
 	reg.validateEmail(Email);
 }
 
+
+@When("user should enter valid address as {string}")
+public void user_should_enter_valid_address_as(String Address) {
+    
+}
+@When("user should enter valid city as {string}")
+public void user_should_enter_valid_city_as(String City) {
+   
+}
+@When("user should enter valid state as {string}")
+public void user_should_enter_valid_state_as(String State) {
+   
+}
+@When("user should enter valid Postal Code as {string}")
+public void user_should_enter_valid_postal_code_as(String PCode) {
+   
+}
+@When("user should enter valid country as {string}")
+public void user_should_enter_valid_country_as(String country) {
+   
+}
+
 }

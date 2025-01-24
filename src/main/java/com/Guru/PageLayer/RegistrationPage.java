@@ -24,6 +24,21 @@ public class RegistrationPage extends BaseClass {
  @FindBy(name="userName")
  private WebElement email;
  
+ @FindBy(name="address1")
+ private WebElement address;
+ 
+ @FindBy(name="city")
+ private WebElement city;
+ 
+ @FindBy(name="state")
+ private WebElement state;
+ 
+ @FindBy(name="postalCode")
+ private WebElement postalCode;
+ 
+ @FindBy(name="country")
+ private WebElement country;
+ 
  
  public RegistrationPage()
  {
