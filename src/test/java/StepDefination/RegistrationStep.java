@@ -50,4 +50,21 @@ public void user_should_enter_valid_last_name_as(String Lname) {
    
 }
 
+
+@When("user should enter valid Phone as {string}")
+public void user_should_enter_valid_phone_as(String Phone) {
+    
+	reg = new RegistrationPage();
+	
+	reg.validatePhone(Phone);
+	
+}
+@When("user should enter valid Email as {string}")
+public void user_should_enter_valid_email_as(String Email) {
+
+	reg = new RegistrationPage();
+	
+	reg.validateEmail(Email);
+}
+
 }

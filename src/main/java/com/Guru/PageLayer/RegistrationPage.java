@@ -41,5 +41,13 @@ public class RegistrationPage extends BaseClass {
 	 WebElementHelper.senKeys(lname, Lname);
  }
 	
+ public void validatePhone(String Phone)
+ {
+	 WebElementHelper.senKeys(phone, Phone);
+ }
 
+ public void validateEmail(String Email)
+ {
+	 WebElementHelper.senKeys(email, Email);
+ }
 }
