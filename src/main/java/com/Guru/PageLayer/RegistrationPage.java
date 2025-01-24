@@ -5,6 +5,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import com.Guru.BaseLayer.BaseClass;
+import com.Guru.UtilityLayer.DropDownHelper;
 import com.Guru.UtilityLayer.WebElementHelper;
 
 public class RegistrationPage extends BaseClass {
@@ -65,4 +66,33 @@ public class RegistrationPage extends BaseClass {
  {
 	 WebElementHelper.senKeys(email, Email);
  }
+ 
+ public void validateAddress(String Address)
+ {
+	 WebElementHelper.senKeys(address, Address);
+ }
+ 
+
+ public void validateCity(String City)
+ {
+	 WebElementHelper.senKeys(city, City);
+ }
+ 
+ public void validateState(String State)
+ {
+	 WebElementHelper.senKeys(state, State); 
+ }
+ 
+
+ public void validatePostalCode(String PostalCode)
+ {
+	 WebElementHelper.senKeys(postalCode, PostalCode);
+ }
+ 
+
+ public void validateCountry(String Country)
+ {
+	 DropDownHelper.handleDropDown(country, Country);
+ }
+ 
 }
