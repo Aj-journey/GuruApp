@@ -6,6 +6,7 @@ import com.Guru.BaseLayer.BaseClass;
 import com.Guru.PageLayer.RegistrationPage;
 
 import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
 public class RegistrationStep extends BaseClass {
@@ -101,6 +102,27 @@ public void user_should_enter_valid_country_as(String country) {
 	reg = new RegistrationPage();
 	
 	reg.validateCountry(country);
+}
+
+
+@When("user should enter valid userName as {string}")
+public void user_should_enter_valid_user_name_as(String string) {
+	
+	
+	
+    
+}
+@When("user should enter valid password as {string}")
+public void user_should_enter_valid_password_as(String string) {
+   
+}
+@When("user should enter valid confirmPassword as {string}")
+public void user_should_enter_valid_confirm_password_as(String string) {
+   
+}
+@Then("user should click on submit button")
+public void user_should_click_on_submit_button() {
+   
 }
 
 }

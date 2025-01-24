@@ -19,3 +19,9 @@ Feature: Guru99 Application
     And user should enter valid state as "MH"
     And user should enter valid Postal Code as "112233"
     And user should enter valid country as "INDIA"
+    
+     Scenario: Valiadate User Information
+    When user should enter valid userName as "aj@gmail.com"
+    When user should enter valid password as "aj12345"
+    When user should enter valid confirmPassword as "aj12345"
+    Then user should click on submit button
